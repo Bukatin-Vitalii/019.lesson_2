@@ -1,0 +1,172 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+.container {
+	max-width: 800px;
+	width: 100%;
+	margin: 50px auto;
+	text-align: center;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	transition: all 0.3s ease 0s;
+}
+
+.title {
+	color: #333;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.search {
+	display: flex;
+	flex-direction: row;
+}
+
+.search__input {
+	outline: none;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px 0 0 4px;
+	height: 45px;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #4285f4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	height: 45px;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: #3367d6;
+}
+
+.search__button {
+	border-radius: 0 4px 4px 0;
+}
+
+.search__button.disabled {
+	background-color: #ccc;
+	pointer-events: none;
+}
+
+.random__button {
+	border-radius: 4px;
+}
+
+.error-message {
+	color: #ff0000;
+	font-size: 12px;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.user {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;;
+	opacity: 0;
+	transition: all 0.7s ease 0s;
+}
+
+.user.active {
+	opacity: 1;
+}
+
+.user__top {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 60px;
+}
+
+.user__info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.user__title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.user__value {
+	font-size: 18px;
+}
+
+.user__img {
+	max-width: 100px;
+	border-radius: 50%;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #4285f4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	height: 45px;
+	transition: all 0.3s ease 0s;
+}
+
+.user__show-repos-btn {
+	padding: 7px;
+	font-size: 14px;
+	height: 35px;
+	border-radius: 4px;
+}
+
+.user__repositories {
+	width: 100%;
+}
+
+.user__repositories-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.user__repositories-list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.user__repositories-link {
+	font-size: 16px;
+	color: #4285f4;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+.user__repositories-link:hover {
+	text-decoration: underline;
+}
+
+.user__repositories-link::before {
+	content: '📦 ';
+}
